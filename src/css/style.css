@@ -1,11 +1,110 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+body {
+	font-family: 'Chakra Petch', sans-serif; /* changing the font for ALL elements*/
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+h1 { /*font family can be the actual listed name of the font*/
+	font-family: 'Honk', Times, sans-serif;
 }
+
+.nabla-font {
+        font-family: 'Nabla', cursive;
+}
+
+p{text-align: center;
+	width: 40%; margin: auto;
+	color: red;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(25, 0, 255);
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font: Nabla;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*The below portion is to center the tips and "section of your choice"*/
+.list-container{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	margin: 0 100px;
+}
+
+html, body{
+	min-height: 100%;
+	margin: 0;
+}
+/*The above section is to center the tips and "section of your choice"*/
+
+
+/*below portion is for the desktop and iPad layouts and allow for a grid like setup*/
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: flex;
+  padding: 3px;
+  position: relative; /* Add position relative to the column */
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 1px;
+}
+
+.container img {
+  width: 100%; /* Ensure images cover the column width */
+  height: 500px; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white; /* Change text color if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
+  padding: 5px;
+}
+/*above portion is for the desktop and iPad layouts and allow for a grid like setup*/
+
+
+
+
+
+h1{text-align: center;}
