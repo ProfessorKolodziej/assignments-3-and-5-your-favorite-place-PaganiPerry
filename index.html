@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Honk:wght@400&display=swap">
+<link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Montserrat&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+
+<style>
+body {
+	font-family: 'Chakra Petch', sans-serif; /* changing the font for ALL elements*/
+}
+
+h1 { /*font family can be the actual listed name of the font*/
+	font-family: 'Honk', Times, sans-serif;
+}
+
+.nabla-font {
+        font-family: 'Nabla', cursive;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font: Nabla;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*The below portion is to center the tips and "section of your choice"*/
+.list-container{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	margin: 0 100px;
+}
+
+html, body{
+	min-height: 100%;
+	margin: 0;
+}
+/*The above section is to center the tips and "section of your choice"*/
+
+
+/*below portion is for the desktop and iPad layouts and allow for a grid like setup*/
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: flex;
+  padding: 3px;
+  position: relative; /* Add position relative to the column */
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 1px;
+}
+
+.container img {
+  width: 100%; /* Ensure images cover the column width */
+  height: 500px; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white; /* Change text color if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
+  padding: 5px;
+}
+/*above portion is for the desktop and iPad layouts and allow for a grid like setup*/
+
+
+p{text-align: center;}
+h1{text-align: center;}
+
+</style>
+<body>
+<h1>Tokyo, Japan (mobile)</h1>
+<p style = "width: 40%; margin: auto;">Regardless of where you’re from, Japan boasts a variety of wonders, many of which are found in Tokyo, one of their maintourist destinations.</p>
+<p style="width: 40%;margin: auto;">Whether it's ramen, anime, high-end streetwear, or crazy car culture, Tokyo has never-ending things to explore. Tokyo isn’t just a normal city,
+	rather it's the largest city, by population, in the world and one of the largest by urban land area.</p>
+<p style="width: 40%; margin: auto;"> There are truly countless things that make Tokyo speciale: the RHD rule, the public vending machines, the lack of trash cans, anime, their
+	unique history—-however, the funny thing is tha that you’ll most likely figure out what's really speciale along the way of your visit. That's what makes it special.</p>
+
+<div class="container">
+  <img src="https://twomonkeystravelgroup.com/wp-content/uploads/2020/02/Things-To-Do-in-Shibuya-Japan8.jpg" alt="Snow" style="width:100%;">
+  <div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+		in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+		sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+  <div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 1. Shibuya</a></h1></div>
+</div>
+
+<div class="container">
+	<img src="https://images.squarespace-cdn.com/content/v1/571b8ba07c65e4606a80a69c/1513599482526-QFJ9HDHN0DVXAF57OWMO/Don+Quijote+Mega+in+Shibuya" alt="Snow" style="width:100%;">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+		in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+		sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 2. Mega Don Quijote "(Mega Donki)"</a></h1></div>
+  </div>
+
+  <div class="container">
+	<img src="https://th.bing.com/th/id/R.eceadabaf6f46780f686588e2515e940?rik=w36lVaF4r%2fHPdA&pid=ImgRaw&r=0" alt="Snow" style="width:100%;">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+		in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+		sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 3. Skytree</a></h1></div>
+  </div>
+
+  <div class="container">
+	<img src="https://japandeluxetours.com/uploads/2020/05/20200512120955_5ebaf4838224a.jpg" alt="Snow" style="width:100%;">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+		in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+		sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 4. Ginza</a></h1></div>
+  </div>
+
+  <div class="container">
+	<img src="https://www.dlifejourney.com/wp-content/uploads/2018/09/daikanransha-ferris-wheel-odaiba-tokyo.jpg" alt="Snow" style="width:100%;">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+		enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+		in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+		sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 5. Odaiba</a></h1></div>
+  </div>
+
+<div class="list-container">
+  <ul>
+    <h1>TIPS</h1>
+    <li>1. Deeply familiarize yourself with the transportation methods, especially the train system</li>
+    <li>2. If you can avoid taking a taxi, do it—it’s very expensive</li>
+    <li>3. Make sure to bring cash, as not too many places accept card</li>
+    <li>4. There are very few public trash cans around—plan accordingly</li>
+  </ul>
+  <ul>
+    <h1>The niche spots...</h1>
+    <li>For car enthusiasts: Visit places like Ginza, Daikoku, Shibuya, and the Libertywalk HQ.</li>
+    <li>Anime lovers: Can find themselves at home at Akihabara and/or Ikebukuro.</li>
+    <li>Convenient stores such as 7-Eleven, Family Mart, and Lawson serve relatively "gourmet" foods and are a great place to hang out.</li>
+  </ul>
+</div>
+
+
+<h1>Tokyo, Japan (Desktop)</h1>
+<p style = "width: 75%; margin: auto;">Regardless of where you’re from, Japan boasts a variety of wonders, many of which are found in Tokyo, one of their maintourist destinations.</p>
+<p style="width: 75%;margin: auto;">Whether it's ramen, anime, high-end streetwear, or crazy car culture, Tokyo has never-ending things to explore. Tokyo isn’t just a normal city,
+	rather it's the largest city, by population, in the world and one of the largest by urban land area.</p>
+<p style="width: 75%; margin: auto;"> There are truly countless things that make Tokyo speciale: the RHD rule, the public vending machines, the lack of trash cans, anime, their
+	unique history—-however, the funny thing is tha that you’ll most likely figure out what's really speciale along the way of your visit. That's what makes it special.</p>
+<div class="row">
+  <div class="column container" style = "width: 20%;">
+    <img src="https://i.pinimg.com/originals/0a/a6/48/0aa64881a46321bb97ca5fe1d4b81418.jpg" alt="Shibuya Crossing at night">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+		<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 1. Shibuya</a></h1></div>
+	<div class = "bottom-right" style = "background-color: rgba(255, 255, 255, 0.5); text-align: right; width: 30%; display: inline-block; font-family: 'Rampart One', cursive,">
+		渋谷区hi</div>
+  </div>
+
+  <div class="column container"style = "width: 20%;">
+    <img src="https://i.pinimg.com/736x/17/ff/ca/17ffca9fc1f7eff3d233d839eabbe3f6.jpg" alt="Ginza">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 4. Ginza</a></h1></div>
+  </div>
+
+  <div class="column container"style = "width: 20%;">
+    <img src="https://thumbs.dreamstime.com/b/giant-gundam-odaiba-japan-march-m-tall-x-replica-statue-stands-outside-divercity-tokyo-plaza-71277813.jpg" alt="Odaiba ferris wheel at night">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 5. Odaiba</a></h1></div>
+  </div>
+
+  <div class="column container"style = "width: 20%;">
+    <img src="https://th.bing.com/th/id/OIP.dD77WQbafMUiuP4woUZKPgHaKg?w=590&h=837&rs=1&pid=ImgDetMain" alt="Ariel photo of Tokyo Skytree">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 3. Skytree</a></h1></div>
+  </div>
+
+  <div class="column container"style = "width: 20%;">
+    <img src="https://i.pinimg.com/736x/99/d6/dc/99d6dc677c46e122c190e598eadf7097.jpg" alt="Mega Don in Shibuya">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 2. Mega Don Quijote "(Mega Donki)"</a></h1></div>
+  </div>
+</div>
+<div class="list-container">
+  <ul>
+    <h1>TIPS</h1>
+    <li>1. Deeply familiarize yourself with the transportation methods, especially the train system</li>
+    <li>2. If you can avoid taking a taxi, do it—it’s very expensive</li>
+    <li>3. Make sure to bring cash, as not too many places accept card</li>
+    <li>4. There are very few public trash cans around—plan accordingly</li>
+  </ul>
+  <ul>
+    <h1>The niche spots...</h1>
+    <li>For car enthusiasts: Visit places like Ginza, Daikoku, Shibuya, and the Libertywalk HQ.</li>
+    <li>Anime lovers: Can find themselves at home at Akihabara and/or Ikebukuro.</li>
+    <li>Convenient stores such as 7-Eleven, Family Mart, and Lawson serve relatively "gourmet" foods and are a great place to hang out.</li>
+  </ul>
+</div>
+
+
+
+<h1>Tokyo, Japan (iPad Pro)</h1>
+<p style = "width: 40%; margin: auto;">Regardless of where you’re from, Japan boasts a variety of wonders, many of which are found in Tokyo, one of their maintourist destinations.</p>
+<p style="width: 40%;margin: auto;">Whether it's ramen, anime, high-end streetwear, or crazy car culture, Tokyo has never-ending things to explore. Tokyo isn’t just a normal city,
+	rather it's the largest city, by population, in the world and one of the largest by urban land area.</p>
+<p style="width: 40%; margin: auto;"> There are truly countless things that make Tokyo speciale: the RHD rule, the public vending machines, the lack of trash cans, anime, their
+	unique history—-however, the funny thing is tha that you’ll most likely figure out what's really speciale along the way of your visit. That's what makes it special.</p>
+
+<div class="row">
+  <div class="column container" style = "width: 50%;">
+    <img src="https://twomonkeystravelgroup.com/wp-content/uploads/2020/02/Things-To-Do-in-Shibuya-Japan8.jpg" alt="Shibuya Crossing at night">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+		<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 1. Shibuya</a></h1></div>
+  </div>
+
+  <div class="column container"style = "width: 50%;">
+    <img src="https://i.pinimg.com/736x/17/ff/ca/17ffca9fc1f7eff3d233d839eabbe3f6.jpg" alt="Ginza">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 4. Ginza</a></h1></div>
+  </div>
+</div>
+
+<div class = "row">
+	<div class="column container"style = "width: 100%;">
+		<img src="https://i.pinimg.com/originals/21/69/c5/2169c55fda255b4dc3e0357c4f0a1f6c.png" alt="Odaiba ferris wheel at night">
+		<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+		<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 5. Odaiba</a></h1></div>
+	</div>
+</div>
+
+<div class = "row">
+  <div class="column container"style = "width: 50%;">
+    <img src="https://th.bing.com/th/id/OIP.xSOyZ0iH2x_SgJrYODeguQHaE7?rs=1&pid=ImgDetMain" alt="Ariel photo of Tokyo Skytree">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 3. Skytree</a></h1></div>
+  </div>
+
+  <div class="column container"style = "width: 50%;">
+    <img src="https://thumbs.dreamstime.com/b/tokyo-japan-mega-don-quijote-shibuya-tokyo-japan-s-largest-discount-goods-store-main-entrance-view-tokyo-japan-mega-don-191293493.jpg" alt="Mega Don in Shibuya">
+	<div class="top-left" style = "background-color: rgba(255, 255, 255, 0.5); text-align: left; width: 60%; display: inline-block">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+	<div class="centered"><h1><a href = "https://www.japan-guide.com/e/e3007.html"> 2. Mega Don Quijote "(Mega Donki)"</a></h1></div>
+  </div>
+</div>
+
+<div class="list-container">
+  <ul>
+    <h1>TIPS</h1>
+    <li>1. Deeply familiarize yourself with the transportation methods, especially the train system</li>
+    <li>2. If you can avoid taking a taxi, do it—it’s very expensive</li>
+    <li>3. Make sure to bring cash, as not too many places accept card</li>
+    <li>4. There are very few public trash cans around—plan accordingly</li>
+  </ul>
+  <ul>
+    <h1>The niche spots...</h1>
+    <li>For car enthusiasts: Visit places like Ginza, Daikoku, Shibuya, and the Libertywalk HQ.</li>
+    <li>Anime lovers: Can find themselves at home at Akihabara and/or Ikebukuro.</li>
+    <li>Convenient stores such as 7-Eleven, Family Mart, and Lawson serve relatively "gourmet" foods and are a great place to hang out.</li>
+  </ul>
+</div>
+
+</body>
+</html>
