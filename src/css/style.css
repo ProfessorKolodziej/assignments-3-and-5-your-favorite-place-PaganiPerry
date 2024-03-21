@@ -1,107 +1,475 @@
-body {
-	font-family: 'Chakra Petch', sans-serif; /* changing the font for ALL elements*/
+/* CSS code */
+
+/*Add 5 overall tips
+ideas: add 1 tip per panel
+if we go with 1 tip per panel, it might be worht making each tip related to the panel
+put it in a cool thought bubble or idea bubble
+*/
+
+@font-face {
+	font-family: "Badaboom BB";
+	src: url("badaboom-bb.ttf");
+ }
+
+ body {
+	font-family: "Badaboom BB", sans-serif;
+	margin: 0px;
+ }
+
+ h1 { /*font family can be the actual listed name of the font*/
+	 font-family		  : 'Honk', Times, sans-serif;
+ }
+
+ .nabla-font {
+			font-family: 'Nabla', cursive;
+ }
+
+
+ .bounce-text {
+	animation: bounce 2s infinite;
+ }
+
+ @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-30px);
+	}
+	60% {
+	  transform: translateY(-15px);
+	}
+ }
+
+
+
+
+ /*Desktop*/
+ .comic-containerDesktop {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* change this to have two columns */
+	position: relative;
+	gap: 10px;
+	background: #0000ff;
+	padding: 20px;
+	top: 150%;
+	left: 0;
+	height: 125%;
+	width: 100%;
+ }
+
+ .top-leftDesktop {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	text-align: left;
+	width: 60%;
+	display: inline-block;
+ }
+
+ .top-rightDesktop {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+ }
+
+
+ .bottom-leftDesktop {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+ }
+
+ .bottom-rightDesktop {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font: Nabla;
+ }
+
+ .centered-Desktop {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ }
+
+ .comic-panelDesktop {
+	position: relative; /* change this back to relative */
+	overflow: hidden;
+	border: 9px solid black;
+	transform: rotate(-5deg);
+ }
+
+ .comic-panelDesktop img {
+	height: 100%;
+	width: 500px;
+	object-fit: fit;
+	top: 0;
+	left: 0;
+ }
+
+
+ /*Shibuya*/
+ .comic-panelDesktop:nth-child(1) {
+	transform: rotate(-5deg);
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+ }
+
+ .speech-bubbleShibuyaDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 70%;
+	height: 20%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 1;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+ .btnShibuyaDesktop {
+	font-size: 12px; /* Match the size of your previous h1 element */
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: transparent; /* or any color you prefer */
+	border: none; /* or style as needed */
+	cursor: pointer;
+	transition: transform 250ms;
+ }
+
+ .btnShibuyaDesktop:hover {
+	transform: translateY(-10px);
+ }
+
+
+  /*Don Quijote*/
+  .comic-panelDesktop:nth-child(2) {
+	transform: rotate(4deg);
+	top: 0%;
+	left: 0%;
+ }
+
+ .speech-bubbleDonDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 30%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 2;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+
+ .btnDonDesktop {
+	font-size: 12px; /* Match the size of your previous h1 element */
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: transparent; /* or any color you prefer */
+	border: none; /* or style as needed */
+	cursor: pointer;
+	transition: transform 250ms;
+ }
+
+ .btnDonDesktop:hover {
+	transform: translateY(-10px);
+ }
+
+
+
+ /*Odaiba*/
+ .comic-panelDesktop:nth-child(3) {
+	transform: rotate(-1deg);
+	left: 10%;
+	top: 0%;
+	bottom: 100%;
+ }
+
+ .speech-bubbleOdaibaDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 30%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 2;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+ .btnOdaibaDesktop {
+	font-size: 12px; /* Match the size of your previous h1 element */
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: transparent; /* or any color you prefer */
+	border: none; /* or style as needed */
+	cursor: pointer;
+	transition: transform 250ms;
+ }
+
+ .btnOdaibaDesktop:hover {
+	transform: translateY(-10px);
+ }
+
+ /*Skytree*/
+ .comic-panelDesktop:nth-child(4) {
+	transform: rotate(-7deg);
+	top: 8%;
+	left: 10%;
+ }
+
+ .speech-bubbleSkytreeDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 30%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 1;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+ .btnSkytreeDesktop {
+	font-size: 12px; /* Match the size of your previous h1 element */
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: transparent; /* or any color you prefer */
+	border: none; /* or style as needed */
+	cursor: pointer;
+	transition: transform 250ms;
+ }
+
+ .btnSkytreeDesktop:hover {
+	transform: translateY(-10px);
+ }
+
+ /*Ginza*/
+ .comic-panelDesktop:nth-child(5) {
+	transform: rotate(5deg);
+	top: 5%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+ }
+
+ .speech-bubbleGinzaDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 30%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 2;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+ .btnGinzaDesktop {
+	font-size: 12px; /* Match the size of your previous h1 element */
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	background: transparent; /* or any color you prefer */
+	border: none; /* or style as needed */
+	cursor: pointer;
+	transition: transform 250ms;
+ }
+
+ .btnGinzaDesktop:hover {
+	transform: translateY(-10px);
+ }
+
+
+
+ .speech-bubbleDesktop {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 30%;
+	background: white;
+	border: 3px solid black;
+	border-radius: 50%;
+	font-family: "Badaboom BB", sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 2;
+	transform: rotate(5deg);
+	 color: black;
+	-webkit-text-stroke: 0.25px white;
+ }
+
+ .bubble2 {
+	 position: relative;
+	 width: 300px;
+	 text-align: center;
+	 line-height: 1.4em;
+	 margin: 40px auto;
+	 background-color: #fff;
+	 border: 8px solid #333;
+	 border-radius: 30px;
+	 font-family: sans-serif;
+	 padding: 20px;
+	 font-size: large;
+ }
+
+ /* Add these properties to the thought bubble 2 */
+ .bubble2.thought2 {
+	font-family: "Badaboom BB", sans-serif;
+	 position: absolute;
+	 border: 5px solid black;
+	 top: 70%;
+	 left: 1%;
+	 width: 40%;
+	 height: 10%;
+	 transform: rotate(5deg);
+	 color: black;
+	 -webkit-text-stroke: 0.25px white;
+ }
+
+ .thought2 {
+	 width: 300px;
+	 border-radius: 200px;
+	 padding: 30px;
+ }
+
+ .bubble2:before,
+ .bubble2:after {
+	 content: ' ';
+	 position: absolute;
+	 width: 0;
+	 height: 0;
+ }
+
+ .thought2:before,
+ .thought2:after {
+	 right: 10px;
+	 top: -30px;
+	 width: 40px;
+	 height: 40px;
+	 background-color: #fff;
+	 border: 8px solid black;
+	 -webkit-border-radius: 28px;
+	 -moz-border-radius: 28px;
+	 border-radius: 28px;
+ }
+
+ .thought2:after {
+	 width: 20px;
+	 height: 20px;
+	 right: 5px;
+	 top: -40px;
+	 -webkit-border-radius: 18px;
+	 -moz-border-radius: 18px;
+	 border-radius: 18px;
+ }
+
+
+ @media (max-width: 1350px){
+   .comic-containerDesktop {
+	display: grid;
+	grid-template-columns: auto auto; /* change this to have two columns */
+	position: absolute;
+	gap: 10px;
+	background: #ffa500;
+	padding: 20px;
+	top: 10%;
+	left: 0;
+	height: 200%;
+	width: 100%;
+ }
+
+  /*Shibuya iPad*/
+  .comic-panelDesktop:nth-child(1) {
+	transform: rotate(-5deg);
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 75%;
+ }
+
+  /*Don Quijote iPad*/
+    .comic-panelDesktop:nth-child(2) {
+	transform: rotate(4deg);
+	top: 0%;
+	left: 0%;
+  height: 100% ;
+  width: 75%;
+ }
+
+
+   /*Odaiba iPad*/
+ .comic-panelDesktop:nth-child(3) {
+  left: 22%;
+	transform: rotate(-2deg);
+	grid-column-start: 1;
+  grid-column-end: 3;
+  height: 500px;
+  width: 500px;
+ }
 }
 
-h1 { /*font family can be the actual listed name of the font*/
-	font-family: 'Honk', Times, sans-serif;
-}
-
-.nabla-font {
-        font-family: 'Nabla', cursive;
-}
-
-p{text-align: center;
-	width: 40%; margin: auto;
-	color: red;
-}
-
-.container {
+@media (max-width: 500px){
+   .comic-containerDesktop {
+	display: grid;
+	grid-template-columns: 1fr; /* change this to have two columns */
   position: relative;
-  text-align: center;
-  color: rgb(25, 0, 255);
+	gap: 10px;
+	background: #ff0000;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 800px;
+  display: block;
+  max-width: 500px;
+ }
+
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  font: Nabla;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/*The below portion is to center the tips and "section of your choice"*/
-.list-container{
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
-	margin: 0 100px;
-}
-
-html, body{
-	min-height: 100%;
-	margin: 0;
-}
-/*The above section is to center the tips and "section of your choice"*/
 
 
-/*below portion is for the desktop and iPad layouts and allow for a grid like setup*/
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: flex;
-  padding: 3px;
-  position: relative; /* Add position relative to the column */
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 1px;
-}
-
-.container img {
-  width: 100%; /* Ensure images cover the column width */
-  height: 500px; /* Maintain aspect ratio */
-}
-
-.text-overlay {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  color: white; /* Change text color if needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the text */
-  padding: 5px;
-}
-/*above portion is for the desktop and iPad layouts and allow for a grid like setup*/
 
 
-h1{text-align: center;}
+
+
